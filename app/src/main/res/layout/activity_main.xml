@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.androidjp.jp_event_demo.MyRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:id="@+id/layout_root"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rootLayout"
+        />
+
+
+    <com.androidjp.jp_event_demo.MyRelativeLayout
+        android:id="@+id/layout_a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_color"
+        android:layout_margin="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="layoutA"
+            />
+
+        <com.androidjp.jp_event_demo.MyRelativeLayout
+            android:id="@+id/layout_b_1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/yellow"
+            android:layout_margin="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="layout_b_1"
+                android:layout_alignParentRight="true"
+                />
+
+            <com.androidjp.jp_event_demo.MyButton
+                android:id="@+id/btn_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="btn_a"
+                android:background="@color/red"
+                />
+
+
+        </com.androidjp.jp_event_demo.MyRelativeLayout>
+
+
+        <com.androidjp.jp_event_demo.MyRelativeLayout
+            android:id="@+id/layout_b_2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green"
+            android:layout_margin="30dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="layout_b_2"
+                android:layout_alignParentRight="true"
+                />
+
+            <com.androidjp.jp_event_demo.MyTextView
+                android:id="@+id/view_b1"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@color/red"
+                android:text="view_b1"
+                />
+
+            <TextView
+                android:id="@+id/view_b2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@color/gray"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom|right"
+                android:text="view_b2"
+                />
+
+            <TextView
+                android:id="@+id/view_b3"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@color/yellow"
+                android:layout_alignParentBottom="true"
+                android:text="view_b3"
+                />
+
+            <TextView
+                android:id="@+id/view_b4"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@color/blue"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="70dp"
+                android:text="view_b4"
+                />
+
+
+        </com.androidjp.jp_event_demo.MyRelativeLayout>
+
+
+    </com.androidjp.jp_event_demo.MyRelativeLayout>
+
+
+</com.androidjp.jp_event_demo.MyRelativeLayout>
